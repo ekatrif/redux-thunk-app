@@ -5,7 +5,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 # TODO:
 - [x] Dark / Light mode switching
 - [x] Getting countries list & show it in UI
-- [ ] Filtering countries by search request
+- [x] Filtering countries by search request
 - [ ] Filtering countries by region
 - [ ] Getting extended info about selected country
 - [ ] Getting neighbors list
