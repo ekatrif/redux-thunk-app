@@ -59,7 +59,7 @@ export const HomePage = () => {
           return (
             <Card
               key={c.name.common}
-              onClick={() => navigate(`/country/${c.name}`)}
+              onClick={() => navigate(`/country/${c.name.common}`)}
               {...countryInfo}
             />
           );

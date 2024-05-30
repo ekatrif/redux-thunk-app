@@ -8,6 +8,8 @@ import { Container } from './Container';
 import { useSelector, useDispatch } from 'react-redux';
 import { setTheme } from '../store/theme/theme-actions';
 
+import { clearControls } from '../store/controls/controls-actions';
+
 const HeaderEl = styled.header`
   box-shadow: var(--shadow);
   background-color: var(--colors-ui-base);
@@ -47,11 +49,15 @@ export const Header = () => {
     document.body.setAttribute('data-theme', theme);
   }, [theme]);
 
+  const onClickTitle = () => {
+    dispatch(clearControls);
+  }
+
   return (
     <HeaderEl>
       <Container>
         <Wrapper>
-          <Title>Where is the world?</Title>
+          <Title onClick={onClickTitle}>Where is the world?</Title>
           <ModeSwitcher onClick={toggleTheme}>
             {theme === 'light' ? (
               <IoMoonOutline size="14px" />
