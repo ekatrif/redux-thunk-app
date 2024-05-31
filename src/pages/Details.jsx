@@ -14,10 +14,8 @@ import { loadCountryByName, clearDetails } from '../store/details/details-action
 export const Details = () => {
   const dispatch = useDispatch();
   const { currentCountry, error, status } = useSelector(selectDetails);
-  console.log(useParams())
   const { name } = useParams();
   const navigate = useNavigate();
-  console.log(currentCountry)
 
   useEffect(() => {
     dispatch(loadCountryByName(name))

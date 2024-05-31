@@ -8,5 +8,5 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 - [x] Filtering countries by search request
 - [x] Filtering countries by region
 - [x] Getting extended info about selected country
-- [ ] Getting neighbors list
+- [x] Getting neighbors list
 
